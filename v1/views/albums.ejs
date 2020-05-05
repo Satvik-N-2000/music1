@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+ <div class="container">
+<header class="jumbotron">
+    <h1>this is TheWeeeknd</h1>
+    <p>View our hand-picked albums</p>
+    <p>
+
+        <a class="btn btn-primary btn-lg " href="/XO/new" >Add new album here</a>
+    </p>
+    
+</header>
+
+<!--<a href="/XO/new" >Add new album here</a> -->
+<%  albums.forEach(function(album){ %>
+        <div>
+            <h4><%= album.name %></h4>
+            <img src ="<%=album.image %>"
+        </div>
+<% }); %>
+
+<%- include("partials/header") %>
+    </div>
